@@ -1,0 +1,57 @@
+body{
+
+}
+header{
+	text-align: center;
+	font-size:35px;
+	font-style:bold;
+	font-family: 'Cinzel Decorative', cursive;
+}
+.home{
+	border:black solid 5px;
+}
+#home{
+	background-image: url("humanity.jpeg");
+	background-repeat:no-repeat;
+	background-size:cover;
+	text-align:center;
+}
+img.africa{
+	width:40%;
+	height:auto;
+	margin:auto;
+	display:block;
+}
+.us{
+	height:150px;
+	padding: 10px;
+	display:inline-block;
+}
+#grouppic{
+	margin:auto;
+	text-align:center;
+}
+.links{
+	display:inline-block;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+a{
+	text-decoration:none;
+	color:white;
+}
+a:link{
+	color:white;
+}
+a:hover{
+	color:white;
+}
+a:active{
+	color:white;
+}
+a:visited{
+	color:white;
+}
+#topnav{
+	margin:auto;
+	text-align:center;
+}
