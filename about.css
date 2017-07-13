@@ -1,20 +1,11 @@
 body{
 
 }
-header{
+a.head{
 	text-align: center;
 	font-size:35px;
 	font-style:bold;
 	font-family: 'Cinzel Decorative', cursive;
-}
-.home{
-	border:black solid 5px;
-}
-#home{
-	background-image: url("humanity.jpeg");
-	background-repeat:no-repeat;
-	background-size:cover;
-	text-align:center;
 }
 a.head:active, a.head:link, a.head:visited{
 	text-decoration:none;
@@ -23,13 +14,6 @@ a.head:active, a.head:link, a.head:visited{
 a.head:hover{
 	text-decoration:underline;
 	color:black;
-}
-img.africa{
-	width:50%;
-	height:auto;
-	margin:auto;
-	display:block;
-	padding:5px;
 }
 img.us{
 	height:150px;
@@ -45,6 +29,13 @@ img.us:hover{
 	-webkit-transform: scale(1.1);
 	transform: scale(1.1);
 	-o-transform: scale(1.1);
+}
+img.daijon{
+	height:250px;
+	display:inline-block;
+}
+#daijon{
+	text-align:right;
 }
 #grouppic{
 	margin:auto;
