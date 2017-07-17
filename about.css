@@ -53,10 +53,10 @@ img.us:hover{
 	-webkit-transform: scale(1.1);
 	transform: scale(1.1);
 	-o-transform: scale(1.1);
-	text-shadow:1.5px 1.5px 1.5px #BBBBBB,
-				1.5px 1.5px 1.5px #BBBBBB,
-				1.5px 1.5px 1.5px #BBBBBB,
-				1.5px 1.5px 1.5px #BBBBBB;
+	-webkit-filter: drop-shadow(7px 7px 7px #000);
+	-moz-filter:drop-shadow(7px 7px 7px #000);
+	filter: drop-shadow(7px 7px 7px #000);
+	-o-filter:drop-shadow(7px 7px 7px #000);
 }
 img.me{
 	height:500px;
@@ -71,20 +71,22 @@ img.me{
 	text-align:right;
 	margin:20px;
 }
+#pic1{
+	text-align:left;
+	margin:20px;
+}
 h1.head{
 	text-align:left;
 	font-family: 'Roboto Condensed', sans-serif;
 }
+h1.head1{
+	text-align:left;
+	font-family: 'Roboto Condensed', sans-serif;
+	padding-left:580px;
+}
 #grouppic{
 	margin:auto;
 	text-align:center;
-}
-p.link2{
-	font-size:30px;
-	text-shadow:1.5px 1.5px 1.5px #BBBBBB,
-				1.5px 1.5px 1.5px #BBBBBB,
-				1.5px 1.5px 1.5px #BBBBBB,
-				1.5px 1.5px 1.5px #BBBBBB;
 }
 .link1, .link2{
 	display:inline-block;
@@ -158,4 +160,8 @@ b{
 	font-family: 'Roboto Condensed', sans-serif;
 	font-style: bold;
 	font-size: 20px;
+}
+h1.names:hover{
+	text-decoration:underline;
+	cursor: default;
 }
