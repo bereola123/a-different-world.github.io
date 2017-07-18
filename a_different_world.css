@@ -1,5 +1,5 @@
 body{ 
-	margin:30px;
+	margin:20px;
 	background-color:#fad5af;
 }
 header{
@@ -35,16 +35,20 @@ a.head{
 	font-size:40px;
 	font-style:bold;
 	font-family:'Cinzel Decorative', cursive;
+	text-shadow:1.5px 1.5px 1.5px #999,
+				1.5px 1.5px 1.5px #999,
+				1.5px 1.5px 1.5px #999,
+				1.5px 1.5px 1.5px #999;
 }
 a.head:active, a.head:link, a.head:visited{
 	text-decoration:none;
 	color:black;
 }
 a.head:hover{
-	text-shadow:1.5px 1.5px 1.5px #BBBBBB,
-				1.5px 1.5px 1.5px #BBBBBB,
-				1.5px 1.5px 1.5px #BBBBBB,
-				1.5px 1.5px 1.5px #BBBBBB;
+	text-shadow:2px 2px 2px #666,
+				2px 2px 2px #666,
+				2px 2px 2px #666,
+				2px 2px 2px #666;
 }
 img.africa{
 	width:50%;
@@ -106,7 +110,7 @@ a{
 	font-size:20px;
 }
 a:visited.link2, a:active.link2, a:link.link2{
-	color:#111;
+	color:black;
 	text-decoration:none;
 	text-shadow:1.5px 1.5px 1.5px #999,
 				1.5px 1.5px 1.5px #999,
@@ -114,7 +118,7 @@ a:visited.link2, a:active.link2, a:link.link2{
 				1.5px 1.5px 1.5px #999;
 }
 a:hover.link2{
-	color:#111;
+	color:black;
 	text-decoration:underline;
 	text-shadow:1.5px 1.5px 1.5px #666,
 				1.5px 1.5px 1.5px #666,
@@ -140,11 +144,15 @@ a:hover.link1{
 #topnav{
 	margin:auto;
 	text-align:center;
-
 }
 #bottomnav{
+	margin:auto;
 	text-align:center;
-	padding-top:15px;
+	padding:15px;
+	border-top:gray solid 0.5px;
+	background-color:#ffad59;
+	border-bottom-right-radius:15px;
+	border-bottom-left-radius:15px;
 }
 #about{
 	text-align: center;
@@ -161,11 +169,21 @@ a:hover.link1{
 	text-align:justify;
 	padding-left:15px;
 	padding-right:15px;
-	width:85%;
+	width:82.5%;
 	display:inline-block;
 }
 h1.names{
 	font-family: 'Roboto Condensed', sans-serif;
+	text-shadow:1.5px 1.5px 1.5px #999,
+				1.5px 1.5px 1.5px #999,
+				1.5px 1.5px 1.5px #999,
+				1.5px 1.5px 1.5px #999;
+}
+h1.names:hover{
+	text-shadow:1.5px 1.5px 1.5px #666,
+				1.5px 1.5px 1.5px #666,
+				1.5px 1.5px 1.5px #666,
+				1.5px 1.5px 1.5px #666;
 }
 #daijon, #bola, #noah{
 	display:inline-block;
@@ -193,4 +211,12 @@ h1.names:hover{
 	font-size: 25px;
 	background-color:#a8590b;
 	border-radius:5px;
+}
+.desc{
+	font-family: 'Roboto', sans-serif;
+	font-style: bold;
+	background-color:#bf7c00;
+	border-radius:15px;
+	font-size: 17px;
+	margin:12.5px;
 }

@@ -1,5 +1,6 @@
-body{
+body{ 
 	margin:20px;
+	background-color:#fad5af;
 }
 header{
 	text-align: center;
@@ -7,6 +8,7 @@ header{
 	-moz-transition: all 0.5s;
 	transition: all 0.5s;
 	-o-transition: all 0.5s;
+	padding-bottom:15px;
 }
 header:hover{
 	-moz-transform: scale(1.2);
@@ -18,21 +20,24 @@ header:hover{
 				1.5px 1.5px 1.5px #BBBBBB,
 				1.5px 1.5px 1.5px #BBBBBB;
 }
-#aboutme{
-	border:black solid 5px;
-	border-radius:15px;
-	padding:20px;
-}
 a.head{
 	font-size:40px;
 	font-style:bold;
 	font-family:'Cinzel Decorative', cursive;
+	text-shadow:1.5px 1.5px 1.5px #999,
+				1.5px 1.5px 1.5px #999,
+				1.5px 1.5px 1.5px #999,
+				1.5px 1.5px 1.5px #999;
 }
-a.head:active, a.head:link, a.head:visited, a.head:hover{
+a.head:active, a.head:link, a.head:visited{
 	text-decoration:none;
 	color:black;
-	text-decoration:none;
-	color:black;
+}
+a.head:hover{
+	text-shadow:2px 2px 2px #666,
+				2px 2px 2px #666,
+				2px 2px 2px #666,
+				2px 2px 2px #666;
 }
 img.us{
 	height:150px;
@@ -67,25 +72,12 @@ img.me{
 	filter: drop-shadow(5px 5px 5px #666);
 	-o-filter:drop-shadow(5px 5px 5px #666);
 }
-#pic{
-	text-align:right;
-	margin:20px;
-}
-#pic1{
-	text-align:left;
-	margin:20px;
-}
 h1.head{
 	text-align:left;
 	font-family: 'Roboto Condensed', sans-serif;
 }
-h1.head1{
-	text-align:left;
-	font-family: 'Roboto Condensed', sans-serif;
-	padding-left:580px;
-}
 #grouppic{
-	margin:auto;
+	margin:20px;
 	text-align:center;
 }
 .link1, .link2{
@@ -118,35 +110,50 @@ a:hover.link2{
 				1.5px 1.5px 1.5px #666;
 }
 a:visited.link1, a:active.link1, a:link.link1{
-	color:white;
+	color:black;
 	text-decoration:none;
+	text-shadow:1.5px 1.5px 1.5px #999,
+				1.5px 1.5px 1.5px #999,
+				1.5px 1.5px 1.5px #999,
+				1.5px 1.5px 1.5px #999;
+	padding-bottom:15px;
+}
+a:hover.link1{
+	color:black;
+	text-decoration:underline;
 	text-shadow:1.5px 1.5px 1.5px #666,
 				1.5px 1.5px 1.5px #666,
 				1.5px 1.5px 1.5px #666,
 				1.5px 1.5px 1.5px #666;
-}
-a:hover.link1{
-	color:white;
-	text-decoration:underline;
-	text-shadow:1.5px 1.5px 1.5px #000,
-				1.5px 1.5px 1.5px #000,
-				1.5px 1.5px 1.5px #000,
-				1.5px 1.5px 1.5px #000;
+	padding-bottom:15px;
 }
 #topnav{
 	margin:auto;
 	text-align:center;
+	padding-top:5px;
+	border-top:gray solid 0.5px;
 }
 #bottomnav{
-	text-align:center;
-	padding-top:15px;
-}
-#about{
-	text-align: center;
 	margin:auto;
+	text-align:center;
+	padding:15px;
+	border-top:gray solid 0.5px;
+	background-color:#ffad59;
+	border-bottom-right-radius:15px;
+	border-bottom-left-radius:15px;
 }
 h1.names{
 	font-family: 'Roboto Condensed', sans-serif;
+	text-shadow:1.5px 1.5px 1.5px #999,
+				1.5px 1.5px 1.5px #999,
+				1.5px 1.5px 1.5px #999,
+				1.5px 1.5px 1.5px #999;
+}
+h1.names:hover{
+	text-shadow:1.5px 1.5px 1.5px #666,
+				1.5px 1.5px 1.5px #666,
+				1.5px 1.5px 1.5px #666,
+				1.5px 1.5px 1.5px #666;
 }
 #bola, #noah{
 	display:inline-block;
@@ -164,4 +171,26 @@ b{
 h1.names:hover{
 	text-decoration:underline;
 	cursor: default;
+}
+#aboutme{
+	border:black solid 5px;
+	border-radius:15px;
+	padding:20px;
+}
+#text{
+	float:left;
+	width:60%;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+}
+#pic{
+	margin-left:63%;
+}
+.desc{
+	font-family: 'Roboto', sans-serif;
+	font-style: bold;
+	background-color:#bf7c00;
+	border-radius:15px;
+	font-size: 17px;
+	margin:12.5px;
 }
