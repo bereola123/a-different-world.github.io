@@ -44,10 +44,22 @@ class NoahHandler(webapp2.RequestHandler):
         template = jinja_environment.get_template('aboutn.html')
         self.response.write(template.render())
 
+class MapHandler(webapp2.RequestHandler):
+    def get(self):
+        template = jinja_environment.get_template('map.html')
+        self.response.write(template.render())
+
+class ContactHandler(webapp2.RequestHandler):
+    def get(self):
+        template = jinja_environment.get_template('contact.html')
+        self.response.write(template.render())
+
 app = webapp2.WSGIApplication([
     ('/', MainHandler),
     ('/signin', SignInHandler),
     ('/aboutd', DaijonHandler),
     ('/aboutb', BolaHandler),
-    ('/aboutn', NoahHandler)
+    ('/aboutn', NoahHandler),
+    ('/learn', MapHandler),
+    ('/contact', ContactHandler)
 ], debug=True)
