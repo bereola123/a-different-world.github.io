@@ -184,6 +184,48 @@ h1.names:hover{
 	text-decoration:none;
 	width:3%;
 }
-.text{
+.media:hover{
+	-webkit-filter: drop-shadow(5px 5px 5px #666);
+	-moz-filter:drop-shadow(5px 5px 5px #666);
+	filter: drop-shadow(5px 5px 5px #666);
+	-o-filter:drop-shadow(5px 5px 5px #666);
+}
+#text{
 	margin:15px;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size:20px;
+}
+#contact2{
+	margin:auto;
+	text-align:center;
+}
+input{
+	text-align:left;
+	padding:2px;
+	border-radius:5px;
+	margin:5px;
+	font-family: 'Roboto', sans-serif;
+}
+label{
+	text-align:right;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size:20px;
+}
+form{
+	margin:auto;
+	text-align:center;
+	padding:15px;
+
+}
+input[type = text]{
+	width:10%;
+	text-align:center;
+}
+#email{
+	width:15%;
+}
+textarea{
+	border-radius:5px;
+	font-family: 'Roboto', sans-serif;
+	font-size:12px;
 }

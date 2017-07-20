@@ -64,7 +64,7 @@ img.us:hover{
 	-o-filter:drop-shadow(7px 7px 7px #000);
 }
 img.me{
-	height:500px;
+	height:425px;
 	display:inline-block;
 	border-radius: 20px;
 	-webkit-filter: drop-shadow(5px 5px 5px #666);
@@ -179,13 +179,13 @@ h1.names:hover{
 }
 #text{
 	float:left;
-	width:60%;
+	width:65%;
 	font-family: 'Roboto', sans-serif;
 	font-size: 20px;
 	background-color:#ffad59;
-	padding-bottom:7%;
+	padding-bottom:5px;
 	padding-left:2%;
-	padding-right:5%;
+	padding-right:2%;
 	border-radius:15px;
 }
 #pic{
@@ -218,10 +218,57 @@ ul{
 }
 .red{
 	color:red;
+	text-shadow:-1px -1px 0 #000,  
+				1px -1px 0 #000,
+				-1px 1px 0 #000,
+				1px 1px 0 #000;
 }
 .green{
 	color:green;
+	text-shadow:-1px -1px 0 #000,  
+				1px -1px 0 #000,
+				-1px 1px 0 #000,
+				1px 1px 0 #000;
 }
-.yellow{
-	color:#ffee07;
+.salmon{
+	color:#FA8072;
+	text-shadow:-1px -1px 0 #000,  
+				1px -1px 0 #000,
+				-1px 1px 0 #000,
+				1px 1px 0 #000;
+}
+.ngreen{
+	color:#006600;
+	text-shadow:-1px -1px 0 #000,  
+				1px -1px 0 #000,
+				-1px 1px 0 #000,
+				1px 1px 0 #000;
+}
+.nwhite{
+	color:#FFF;
+	text-shadow:-1px -1px 0 #000,  
+				1px -1px 0 #000,
+				-1px 1px 0 #000,
+				1px 1px 0 #000;
+}
+.jblack{
+	color:black;
+	text-shadow:-1px -1px 0 #000,  
+				1px -1px 0 #000,
+				-1px 1px 0 #000,
+				1px 1px 0 #000;
+}
+.jyellow{
+	color:#FFFF00;
+	text-shadow:-1px -1px 0 #000,  
+				1px -1px 0 #000,
+				-1px 1px 0 #000,
+				1px 1px 0 #000;
+}
+.jgreen{
+	color:#006600;
+	text-shadow:-1px -1px 0 #000,  
+				1px -1px 0 #000,
+				-1px 1px 0 #000,
+				1px 1px 0 #000;
 }
