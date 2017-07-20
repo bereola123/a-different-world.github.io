@@ -14,53 +14,78 @@
 		</header>
 
 		<main>
-			<div id="home" class="home">
-				<div id="topnav">
-					<a class="link1" href="/signin">Sign In</a>
-					<b>|</b>
-					<a class="link1" href="">Register</a>
-					<b>|</b>
-					<a class="link1" href="/learn">Learn</a>
-					<b>|</b>
-					<a class="link1" href="">Upload</a>
-					<b>|</b>
-					<a class="link1" href="/contact">Contact</a>
+			<div id="topnav">
+				<a class="link1" href="/signin">Sign In</a>
+				<b>|</b>
+				<a class="link1" href="">Register</a>
+				<b>|</b>
+				<a class="link1" href="">Learn</a>
+				<b>|</b>
+				<a class="link1" href="">Upload</a>
+				<b>|</b>
+				<a class="link1" href="/contact">Contact</a>
+			</div>
+
+			<div id="contact" class="contact">
+				<img class="people" src="/resources/contactus.jpg">
+				<h1 class="connect">Stay Connected With Us!</h1>
+				<div id="text">
+					Follow us on these social media platforms or sign up for our daily e-mail newsletters!
 				</div>
 
-				<div id="contact" class="contact">
-					<img class="people" src="/resources/contactus.jpg">
-					<h1 class="connect">Stay Connected With Us!</h1>
-					<div class="text">
-						Follow us on these social media platforms or sign up for our daily e-mail newsletters!
-					</div>
+				<div class="icons">
+					<a class="facebook" href="https://www.facebook.com/">
+						<img class="media" src="/resources/facebook.png">
+					</a>
 
-					<div id="icons">
-						<a class="media" href="facebook.com">
-							<img class="facebook" src="/resources/facebook.png">
-						</a>
+					<a class="instagram" href="https://www.instagram.com/?hl=en">
+						<img class="media" src="/resources/instagram.png">
+					</a>
 
-						<a class="media" href="instagram.com">
-							<img class="instagram" src="/resources/instagram.png">
-						</a>
-
-						<a class="media" href="twitter.com">
-							<img class="twitter" src="/resources/twitter.png">
-						</a>
-						
-						<a class="media" href="mailto:someone@example.com?Subject=Hello%20again">
-							<img class="email" src="/resources/email.png">
-						</a>
-					</div>
+					<a class="twitter" href="https://twitter.com/?lang=en">
+						<img class="media" src="/resources/twitter.png">
+					</a>
+					
+					<a class="email" href="mailto:someone@example.com?Subject=Hello%20again" target="_top">
+						<img class="media" src="/resources/email.png">
+					</a>
 				</div>
+			</div>
 
-				<div>
+			<div id="contact2">
+				<h1 class="connect">
+					...or Contact Us!
+				</h1>
+			</div>
 
-				</div>
+				<form method="get" action="/">
+					<label>First Name</label><br>
+					<input type="text" id="fname" placeholder="First Name">
+					<br>
 
-				<div>
-					<form>
-					</form>
-				</div>
+					<label>Last Name</label><br>
+					<input type="text" id="lname" placeholder="Last Name">
+					<br>
+
+					<label>E-Mail</label><br>
+					<input type="text" id="email" placeholder="someone@example.dom">
+					<br>
+
+					<label>Phone Number</label><br>
+					<input type="text" id="number" placeholder="(___)-___-____">
+					<br>
+
+					<label>Subject</label><br>
+					<input type="text" id="subject"><br>
+
+					<label>Your Message</label><br>
+					<textarea placeholder="Input Message Here" id="message" maxlength=30px></textarea>
+					<br>
+
+					<input type="submit" value="Submit">
+				</form>
+
+					
 
 				<div id="bottomnav">
 					<a class="link2" href="/signin">Sign In</a>
@@ -73,7 +98,6 @@
 					<b>|</b>
 					<a class="link2" href="/contact">Contact</a>
 				</div>
-			</div>
 		</main>
 	</body>
 </html>

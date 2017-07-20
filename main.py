@@ -81,6 +81,7 @@ class UploadHandler(webapp2.RequestHandler):
                 'posts': list_of_posts
             }))
 
+
 app = webapp2.WSGIApplication([
     ('/', MainHandler),
     ('/signin', SignInHandler),
@@ -89,5 +90,6 @@ app = webapp2.WSGIApplication([
     ('/aboutn', NoahHandler),
     ('/learn', MapHandler),
     ('/contact', ContactHandler),
-    ('/upload', UploadHandler)
+    ('/upload', UploadHandler),
+    ('/contact', ContactHandler),
 ], debug=True)
