@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<ol><h1> Posts </h1></ol>
+	{% for p in posts %}
+		<li>{{p['name']}} {{p['country']}} {{p['post']}}</li>
+		<br>
+	{% endfor %}
+</body>
+</html>

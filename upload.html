@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="/resources/upload.css">
+	<link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative:900|Roboto+Condensed:700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<title>Upload- A Different World</title>
+</head>
+<body>
+	<header>
+			<a class="head" href="/">
+				A Different World
+			</a>
+		</header>
+	<h3> Upload your Experience </h3>
+	<form method = 'POST' action = '/upload' id= post_form>
+		What's your name? <input type="text" name="name"><br>
+		Where have you been? <input type="text" name="place"><br>
+		Share your pictures <input type="file" name="pic" id="pic"><br>
+		<input type="submit" value="Submit">
+	</form>
+	<textarea rows="4" cols="50" name="textbox" form="post_form" maxlength="250"> Share your experience</textarea>
+</body>
+</html>

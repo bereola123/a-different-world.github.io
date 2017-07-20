@@ -8,6 +8,10 @@ jinja_environment = jinja2.Environment(
     loader=jinja2.FileSystemLoader(
         os.path.dirname(__file__)))
 
+class Posts(ndb.Model):
+    name = ndb.Stringproperty()
+    country = ndb.Stringproperty()
+    post = ndb.Stringproperty()
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
@@ -54,6 +58,29 @@ class ContactHandler(webapp2.RequestHandler):
         template = jinja_environment.get_template('contact.html')
         self.response.write(template.render())
 
+class UploadHandler(webapp2.RequestHandler):
+    def get(self):
+        template = jinja_environment.get_template('upload.html')
+        self.response.write(template.render())
+    def post(self):
+        name = self.request.get('name')
+        country = self.request.get('place')
+        post = self.request.get('textbox')
+
+        post_model = Posts(
+            name= name,
+            country= country,
+            post= post)
+        post_key = post_model.put()
+
+        post_query = Posts.query()
+        list_of_posts = post_query.fetch()
+        template = jinja_environment.get_template('posts.html')
+        self.response.write(template.render(
+            {
+                'posts': list_of_posts
+            }))
+
 app = webapp2.WSGIApplication([
     ('/', MainHandler),
     ('/signin', SignInHandler),
@@ -61,5 +88,6 @@ app = webapp2.WSGIApplication([
     ('/aboutb', BolaHandler),
     ('/aboutn', NoahHandler),
     ('/learn', MapHandler),
-    ('/contact', ContactHandler)
+    ('/contact', ContactHandler),
+    ('/upload', UploadHandler)
 ], debug=True)
