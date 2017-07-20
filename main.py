@@ -64,9 +64,9 @@ class UploadHandler(webapp2.RequestHandler):
         template = jinja_environment.get_template('upload.html')
         self.response.write(template.render())
     def post(self):
-        name = self.request.get('name')
-        country = self.request.get('place')
-        post = self.request.get('textbox')
+        name = self.request.get("name")
+        country = self.request.get("place")
+        post = self.request.get("textbox")
 
         post_model = Posts(
             name= name,
@@ -74,14 +74,21 @@ class UploadHandler(webapp2.RequestHandler):
             post= post)
         post_key = post_model.put()
 
+        template = jinja_environment.get_template('post_added.html')
+        self.response.write(template.render(
+            {
+                'name': name,
+            }))
+
+class PostHandler(webapp2.RequestHandler):
+    def get(self):
         post_query = Posts.query()
         list_of_posts = post_query.fetch()
         template = jinja_environment.get_template('posts.html')
         self.response.write(template.render(
             {
-                'posts': list_of_posts
+                'posts': list_of_posts, 
             }))
-
 
 app = webapp2.WSGIApplication([
     ('/', MainHandler),
@@ -92,5 +99,6 @@ app = webapp2.WSGIApplication([
     ('/learn', MapHandler),
     ('/contact', ContactHandler),
     ('/upload', UploadHandler),
+    ('/posted', PostHandler),
     ('/contact', ContactHandler),
 ], debug=True)

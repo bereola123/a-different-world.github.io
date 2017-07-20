@@ -1,9 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative:900|Roboto+Condensed:700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="/resources/posts.css">
 	<title></title>
 </head>
 <body>
+	<header>
+		<a class="head" href="/">
+			A Different World
+		</a>
+	</header>
 	<ol><h1> Posts </h1></ol>
 	{% for p in posts %}
 		<li>{{p['name']}} {{p['country']}} {{p['post']}}</li>
