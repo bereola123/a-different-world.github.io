@@ -3,15 +3,16 @@ import jinja2
 import os 
 import logging 
 from google.appengine.api import users
+from google.appengine.ext import ndb 
 
 jinja_environment = jinja2.Environment(
     loader=jinja2.FileSystemLoader(
         os.path.dirname(__file__)))
 
 class Posts(ndb.Model):
-    name = ndb.Stringproperty()
-    country = ndb.Stringproperty()
-    post = ndb.Stringproperty()
+    name = ndb.StringProperty()
+    country = ndb.StringProperty()
+    post = ndb.StringProperty()
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
