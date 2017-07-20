@@ -173,23 +173,16 @@ h1.names:hover{
 	font-size: 17px;
 	margin:12.5px;
 }
-.facebook{
-	width:3%;
-}
-.instagram{
-	width:3%;
-}
-.twitter{
-	width:3%;
-}
-.email{
-	width:3%;
+.facebook, .instagram, .twitter, .email{
+	text-decoration: none;
 }
 #icons{
 	display: inline-block;
+	margin:auto;
 }
 .media{
 	text-decoration:none;
+	width:3%;
 }
 .text{
 	margin:15px;

@@ -182,9 +182,14 @@ h1.names:hover{
 	width:60%;
 	font-family: 'Roboto', sans-serif;
 	font-size: 20px;
+	background-color:#ffad59;
+	padding-bottom:7%;
+	padding-left:2%;
+	padding-right:5%;
+	border-radius:15px;
 }
 #pic{
-	margin-left:63%;
+	margin-left:70%;
 }
 .desc{
 	font-family: 'Roboto', sans-serif;
@@ -193,4 +198,30 @@ h1.names:hover{
 	border-radius:15px;
 	font-size: 17px;
 	margin:12.5px;
+}
+ul{
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 20px;
+}
+.age{
+	font-size:25px;
+	color:#666;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+.howard{
+	color:red;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+.university{
+	color:blue;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+.red{
+	color:red;
+}
+.green{
+	color:green;
+}
+.yellow{
+	color:#ffee07;
 }

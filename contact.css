@@ -187,3 +187,7 @@ h1.names:hover{
 	font-size: 17px;
 	margin:12.5px;
 }
+.media{
+	display: inline-block;
+	height:5%;
+}
