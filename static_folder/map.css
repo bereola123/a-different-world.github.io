@@ -1,7 +1,9 @@
 #map {
-	width: 100%;
+	width: 80%;
 	height: 850px;
 	background-color: #fad5af;
+	display: block;
+	margin: auto;
 }
 
 body {
@@ -61,4 +63,7 @@ table {
 	border: 3px solid black;
 	font-style:bold;
 	font-family:'Cinzel Decorative', cursive;
+}
+.top {
+	font-size: 4px solid black;
 }

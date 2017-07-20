@@ -71,7 +71,8 @@ class UploadHandler(webapp2.RequestHandler):
         post_model = Posts(
             name= name,
             country= country,
-            post= post)
+            post= post,
+            
         post_key = post_model.put()
 
         template = jinja_environment.get_template('post_added.html')

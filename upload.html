@@ -13,12 +13,12 @@
 			</a>
 		</header>
 	<h3> Upload your Experience </h3>
-	<form method = 'POST' action = '/upload' id= post_form>
+	<form method = 'POST' action = '/upload' id= post_form enctype="multipart/form-data">
 		What's your name? <input type="text" name="name"><br>
 		Where have you been? <input type="text" name="place"><br>
-		Share your pictures <input type="file" name="pic" id="pic"><br>
 		<input type="submit" value="Submit">
 	</form>
 	<textarea rows="4" cols="50" name="textbox" form="post_form" maxlength="250"> Share your experience</textarea>
+</form>
 </body>
 </html>
